@@ -43,7 +43,7 @@ class AliveTest(FileBasedTest):
 
   def execute(self, test, litConfig):
     test = test.getSourcePath()
-    cmd = ['python', 'run.py', test]
+    cmd = ['python2', 'run.py', test]
     input = readFile(test)
 
     # add test-specific args
